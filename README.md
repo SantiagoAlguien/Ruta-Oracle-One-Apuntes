@@ -16,7 +16,7 @@ para certificación ORACLE. Notas, apuntes, resumenes y actividades.
 
 ### Guias de estudio
 
-#### Etapa Selección
+#### Etapa Selecció
 
 - Introducción [Hello ONE](./001_desarrollo_personal/hello_one.md).
 - [Desarrollo](./001_desarrollo_personal/README.md) Personal.
