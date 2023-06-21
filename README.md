@@ -1,7 +1,7 @@
 # Ruta Oracle One Apuntes de aprendizaje
 
 ### Cursos Alura Latam
-Apuntes para el aprendisaje, este repositorio es tomado del usuario DevFzn que quiero dejar un gran agradecimiento porque estos apuntes me ayudaran mucho para mejorar mi plan de estudio en Alura lantam todos los creditos para DevFzn mil gracias me ayuda mucho.
+Apuntes para el aprendisaje, este repositorio esta inspirado del usuario DevFzn que quiero dejar un gran agradecimiento porque estos apuntes me ayudaran mucho para mejorar mi plan de estudio en Alura lantam todos los creditos para DevFzn mil gracias me ayuda mucho.
 
 Guia de cursos realizados en [alura](https://app.aluracursos.com/dashboard)
 para certificación ORACLE. Notas, apuntes, resumenes y actividades.
