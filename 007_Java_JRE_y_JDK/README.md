@@ -1,17 +1,17 @@
 # Java JRE y JDK: compile y ejecute su primer programa
 
-### ¿Que es Java?
+## -¿Que es Java?
     Quizás algunas de las características de Java que en este caso pues es un lenguaje orientado a objetos, es un lenguaje  fácil de entender, es multiplataforma, quizás algunos otros lenguajes de programación ya tienen este feature o estos     features, pero la ventaja de Java no es el lenguaje en sí. La principal ventaja de Java es la plataforma.
 
     La plataforma Java básicamente sería la máquina virtual de Java que es lo principal, los distintos frameworks que   tenemos, las distintas librerías de la comunidad open source totalmente gratuitas que tenemos para el uso y la facilidad  para implementar todo ello.
 
-### Principales caracteristicas de Java
+## -Principales caracteristicas de Java
     Entre las principales características que tenemos de la plataforma Java es portable, porque puede ser cargada en    cualquier dispositivo, es fácil de implementar, es segura y es omnipresente. Algunos ejemplos que tenemos para describir   mejor estas características son: encontramos Java en servidores, la máquina virtual de Java está presente en servidores   de bancos, empresas grandes, enormes, justo por las características que tiene. Está presente en dispositivos móviles,     teléfonos, tablets, hay una infinidad de dispositivos que corren Java, disponible también en computadores como el mío   actualmente, como el de ustedes también. Hoy en día ya básicamente es imposible tener un computador sin Java porque de    hecho muchas de las aplicaciones actuales necesitan la máquina virtual de Java para ejecutarse.
 
-### ¿Cuál es el mayor beneficio de la máquina virtual de Java (JVM)?
+## -¿Cuál es el mayor beneficio de la máquina virtual de Java (JVM)?
     R: El mayor beneficio de Java es que es multiplataforma
 
-### Versiones de Java
+### -Versiones de Java
 ![img](./Versiones%20de%20Java.png)
 
     Para entender un poco cómo es que funciona el ecosistema de Java. Tenemos la máquina virtual de Java, la Java Virtual   Machine, pero no es lo único que necesitamos para escribir código de Java.De hecho tenemos otros features, como las   librerías escritas en Java que nos van a dar diversas funcionalidades, y este conjunto nos va a dar el JRE, que es el     Java Runtime Environment. El Java Runtime Envrionment es la Java Virtual Machine con el conjunto de librerías nos van a     permitir ejecutar código Java en nuestra máquina.
@@ -32,7 +32,7 @@
     String[] args=
 
 ###  Como compilar y ejecutar codigo
-    primero se crea un archivo .java que debe contener en su interior una class del programa que se escribe asi:
+    -primero se crea un archivo .java que debe contener en su interior una class del programa que se escribe asi:
 
     class Programa {
     public static void main(String[] args) {
@@ -86,6 +86,19 @@ despues se nos creara un archivo javac Y para llamar a la JVM usamos solo el nom
     }
     }
 
-### Test If
+### Condicionales 
+    Entonces, en el caso de condicionales, lo que buscamos aquí es hacer una pequeña comparación, una evaluación de una condición, y si la condición es verdadera haz una cosa, y si es falsa, haz otra o simplemente no hagas nada.
+    
+    La palabra reserva de Java es el **if** en la estructura de if nosotrosos declaramos la evaluacion dentro del (), esto es obligatorio en Java y cuando pase nuestra validacion ponemos dentro de {} lo que queremos que haga.
 
+    **Ejemplo**
+    int edad = 17 //valor de edad 
+
+    if(edad >= 18){     //Validacion si edad es mayor o igual 
+        System.out.println("Uste puede pasar");  //Si edad es mayor se imprime el mensaje de Uste puede pasar
+    }else{      //Si la validacion no pasa esta pasara al else que no paso 
+        System.out.println("Uste no puede pasar");      //Sino es mayor entonces se imprime este mensaje Uste no puede pasar
+    }
+
+### Bolean 
     
