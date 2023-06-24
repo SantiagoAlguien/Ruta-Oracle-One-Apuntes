@@ -93,8 +93,8 @@ Para convertir el dato de una variable a otra se tiene que hacer un Cast
             double variable1 = 230.3232;
             int variableEntero = (int) variable1; En este momento se hace el cast osea la conversion 
             System.out.println("Funcionooo!!!");
+        }
     }
-}
 
 - ## Condicionales 
 Entonces, en el caso de condicionales, lo que buscamos aquí es hacer una pequeña comparación, una evaluación de una condición, y si la condición es verdadera haz una cosa, y si es falsa, haz otra o simplemente no hagas nada.
