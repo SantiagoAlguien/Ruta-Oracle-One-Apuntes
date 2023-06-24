@@ -139,8 +139,10 @@ Boolean es una palabra reserva de JAVA, que es tipo de variable primitivo que so
     Los operadores de validacion se usan dentro de las condiciones de *if* que estos se pueden ver representados de distintas formas 
 
     AND está representado por los caracteres &&
-    OR está representado por los caracteres ||
 
+    OR está representado por los caracteres ||
+    <br>
+    <br>
     AND es para decir y este operador requerido mientras que o es una validacion opcional como o puede pasar esto
 
 - ## Scope e inicializacion
