@@ -6,6 +6,7 @@
     La plataforma Java básicamente sería la máquina virtual de Java que es lo principal, los distintos frameworks que   tenemos, las distintas librerías de la comunidad open source totalmente gratuitas que tenemos para el uso y la facilidad  para implementar todo ello.
 
 ## -Principales caracteristicas de Java
+
     Entre las principales características que tenemos de la plataforma Java es portable, porque puede ser cargada en    cualquier dispositivo, es fácil de implementar, es segura y es omnipresente. Algunos ejemplos que tenemos para describir   mejor estas características son: encontramos Java en servidores, la máquina virtual de Java está presente en servidores   de bancos, empresas grandes, enormes, justo por las características que tiene. Está presente en dispositivos móviles,     teléfonos, tablets, hay una infinidad de dispositivos que corren Java, disponible también en computadores como el mío   actualmente, como el de ustedes también. Hoy en día ya básicamente es imposible tener un computador sin Java porque de    hecho muchas de las aplicaciones actuales necesitan la máquina virtual de Java para ejecutarse.
 
 ## -¿Cuál es el mayor beneficio de la máquina virtual de Java (JVM)?
