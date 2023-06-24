@@ -1,6 +1,6 @@
 # Java JRE y JDK: compile y ejecute su primer programa
 
-**-¿Que es Java?**
+- **¿Que es Java?**
     Quizás algunas de las características de Java que en este caso pues es un lenguaje orientado a objetos, es un lenguaje  fácil de entender, es multiplataforma, quizás algunos otros lenguajes de programación ya tienen este feature o estos     features, pero la ventaja de Java no es el lenguaje en sí. La principal ventaja de Java es la plataforma.
 
     La plataforma Java básicamente sería la máquina virtual de Java que es lo principal, los distintos frameworks que   tenemos, las distintas librerías de la comunidad open source totalmente gratuitas que tenemos para el uso y la facilidad  para implementar todo ello.
