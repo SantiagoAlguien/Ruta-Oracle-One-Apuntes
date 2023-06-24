@@ -26,3 +26,5 @@ primoridiales en programación con Javascript.
 - [Git](./005_Git_y_github/README.md) y Github.
 
 #### Etapa Especialización - BackEnd
+-[Java JRE y JDK](./007_Java_JRE_y_JDK/README.md) Compile y ejecute su primer programa.
+-[Java OO](./008_Java_OO/README.md) Entendiendo la Orientación a Objetos.
