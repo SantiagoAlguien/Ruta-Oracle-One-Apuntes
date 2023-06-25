@@ -2,9 +2,7 @@
 
 - ## ¿Que es Java?
 
-    Java es un lenguaje de programación OOP Quizás algunas de las características de Java que en este caso pues es un lenguaje orientado a objetos, es un lenguaje  fácil de entender, es multiplataforma, quizás algunos otros lenguajes de programación ya tienen este feature o estos     features, pero la ventaja de Java no es el lenguaje en sí. La principal ventaja de Java es la plataforma.
-
-    La plataforma Java básicamente sería la máquina virtual de Java que es lo principal, los distintos frameworks que tenemos, las distintas librerías de la comunidad open source totalmente gratuitas que tenemos para el uso y la facilidad  para implementar todo ello.
+    Java es uno de los lenguajes de programación más utilizados en todo el mundo, según el famoso ranking de TIOBE. Es un lenguaje orientado a objetos, multiplataforma y bastante completo por permitir la creación de un programa único para uso en diversas plataformas. La plataforma Java ha ganado muchos mercados diferentes, desde aplicaciones de teléfonos, aplicaciones de escritorio en grandes empresas y gobiernos, pasando por el creciente mercado mobile y el reciente despegue de IoT (Internet of Things). De todas formas, el gran mercado de Java actualmente sigue siendo back-end en sistemas Web.
 
 - ## Principales caracteristicas de Java
 
@@ -21,7 +19,7 @@
 
     Para entender un poco cómo es que funciona el ecosistema de Java. Tenemos la máquina virtual de Java, la Java Virtual   Machine, pero no es lo único que necesitamos para escribir código de Java.De hecho tenemos otros features, como las   librerías escritas en Java que nos van a dar diversas funcionalidades, y este conjunto nos va a dar el JRE, que es el     Java Runtime Environment. El Java Runtime Envrionment es la Java Virtual Machine con el conjunto de librerías nos van a permitir ejecutar código Java en nuestra máquina.
 
-    ![img](JDK.png)
+    ![img](./JDK.png)
 
 - **Estructura de compilado de Java**
     

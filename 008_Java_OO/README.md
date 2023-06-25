@@ -15,7 +15,7 @@ En este curso se trabaja la orientacion a objectos en donde entederemos el conce
 
 Un objecto es la representacion del conjunto de atributos que compone alguna entidad o cosa de la vida que se intenta plasmar en la programacion. para hacer esto en el curso se hara un proyecto el cual es la creacion de un banco que este va a tener objectos en donde definiremos las caracteristicas que va tener la cuenta 
 
-![img](Objecto.png)
+![img](./Objecto.png)
 
 ## Crear una clase
 
@@ -36,7 +36,7 @@ Para crear una instancia, es obligatorio completar los valores de todos los atri
 
 Una instacia es la representacion de un objecto siendo en si un objecto en particular que tiene su propia informacion y es unica, para creacion de una instacia se hace de la siguiente forma:
 
-![img](Instancias.png)
+![img](./Instancias.png)
 
     public static void main(String[] args) { 
         Cuenta primeraCuenta =  new Cuenta(); //Antes de llamar a la cuenta toca especificar que tipo de variable es en este caso la variable es de tipo cuenta
@@ -90,4 +90,69 @@ La referencia es el lugar de la memoria donde se guarda el objecto los datos de 
         System.out.println(segundaCuenta);
         }
     
-![img](Referencia.png)
+![img](./Referencia.png)
+
+## Creacion metodo sin retorno
+
+Un metodo es un corportamiento que queramos que tenga nuestro objecto y esos los paso que debe tener nuestro objecto un metodo para que funcione nesecita parametros que el inpot que hara debtro de ()
+
+![img](./metodo.png)
+
+    class Cuenta {
+
+    double saldo; 
+    int agencia;
+    int numero;
+    String titular;
+    void depositar (double valor){
+        saldo = saldo + valor;
+    } //Este el ejempplo de un metodo que no regrese valor 
+    }
+
+void //Es una palabra reservada para decir que algo no retorne valor puede ejecutarse sin que retorne algo 
+
+[Pruebas metodos](./src/PruebasMetodos.java) 
+
+- **¿Cuál es la sintaxis y el orden correctos para llamar a un método con Java?**
+
+    nombreDeReferencia.nombreDelMetodo();
+
+- **Uso de this**
+Usar la palabra reservada de this forma parte de buenas practicas lo que hace es decir que hace referencia a este objecto 
+
+    class Cuenta {
+
+    double saldo; 
+    int agencia;
+    int numero;
+    String titular;
+    void depositar (double valor){
+        // Esta cuenta           // Esta cuenta
+        //this account           //this account 
+        //this object            //this object
+        this.saldo             =      this.saldo                + valor;
+        }    
+    }
+
+## Creacion metodo con retorno
+
+Un metodo con retorno de valor hace lo opuesto a uno que no retorne este si nesecita una validacion para que este aprobado sino no se pasara la validacion como se mira 
+
+    //No retorna valor 
+    public void depositar (double valor){
+        saldo = saldo + valor;
+    }
+
+    //Retornar valor 
+    public boolean retirar(double valor) { //el tipo es booleano para la validacion 
+        if(this.saldo >= saldo){
+            this.saldo = this.saldo - valor; //la validacion del retiro 
+            return true; //si pasa la validacion pasa true lo cual la finaliza
+        } else{
+            return false; //si no entonces no pasa 
+        }
+        
+    }
+
+## Referenciando de objectos
+
