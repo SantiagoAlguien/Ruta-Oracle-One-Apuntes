@@ -36,10 +36,58 @@ Para crear una instancia, es obligatorio completar los valores de todos los atri
 
 Una instacia es la representacion de un objecto siendo en si un objecto en particular que tiene su propia informacion y es unica, para creacion de una instacia se hace de la siguiente forma:
 
+![img](Instancias.png)
+
     public static void main(String[] args) { 
         Cuenta primeraCuenta =  new Cuenta(); //Antes de llamar a la cuenta toca especificar que tipo de variable es en este caso la variable es de tipo cuenta
-        primeraCuenta.saldo = 1000; //llamamos el objecto y con el . determinamos el capo que va trabajar y le asignamos un saldo de 1000
+        primeraCuenta.saldo = 1000; //llamamos el objecto y con el . determinamos el campo que va trabajar y le asignamos un saldo de 1000
         System.out.println(primeraCuenta.saldo); //para ver que si se guardo escribomos el objecto junto al campo
     }
 
-    new //Es una palabra reservada lo que hace es decir crea esto nuevo en este caso la instacia Cuenta con ()
+    new //Es una palabra reservada lo que hace es decir crea esto nuevo en este caso la instacia Cuenta con (), tambien lo que hace es crear un espacio reservado en la memoria de java
+
+
+**Valores por default**
+
+Los valores por default en los objectos son los valores que tienen por defecto los campo de un objecto casi siempre es 0 o null tambien se da este valor porque llamamos a la instacia de un objecto y este inicializa los campos, tambien podemos determinar el valor por defecto como se puede ver:
+
+    class Cuenta {
+
+    double saldo = 100; 
+    int agencia = 1;
+    int numero = 02;
+    String titular = "yo";
+
+    }
+
+**Referencias**
+
+La referencia es el lugar de la memoria donde se guarda el objecto los datos de un obejcto si 2 objectos tienen la misma referencia del lugar de memoria tanto el primer objecto afectaran al otro y viseversa con la misma refencia osea cuando apunta al mismo objecto estas se suman los valores
+
+        public static void main(String[] args) {
+        Cuenta primeraCuenta = new Cuenta();
+        primeraCuenta.saldo = 300;
+
+        System.out.println("saldo de primera cuenta : " + primeraCuenta.saldo);
+
+        Cuenta segundaCuenta = primeraCuenta;
+
+        System.out.println("saldo de segunda Cuenta: " + segundaCuenta.saldo);
+
+        segundaCuenta.saldo += 100;
+        System.out.println("saldo de segunda Cuenta " + segundaCuenta.saldo);
+
+        System.out.println(primeraCuenta.saldo);
+
+        if(primeraCuenta == segundaCuenta) {
+            System.out.println("Es la misma cuenta");
+        }else{
+            System.out.println("Es diferente");
+        }
+
+
+        System.out.println(primeraCuenta);
+        System.out.println(segundaCuenta);
+        }
+    
+![img](Referencia.png)
