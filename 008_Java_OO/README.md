@@ -156,3 +156,20 @@ Un metodo con retorno de valor hace lo opuesto a uno que no retorne este si nese
 
 ## Referenciando de objectos
 
+Ahora escriba el método de transfiere, también debe retornar un booleano, pero ahora recibirá una Cuenta que será el destino y la cantidad que se transferirá.
+
+    public boolean transfiere(double valor, Cuenta destino){
+
+    if(this.saldo >= valor){
+        this.saldo -= valor;
+        destino.deposita(valor);    
+        return true;
+    }
+    return false;
+    }
+
+## Lo que se aprendio 
+
+Cómo definir métodos con parámetros y retorno cómo devolver algo usando la palabra clave return cómo usar la referencia thispara acceder a un atributo que podemos pasar una referencia como parámetro de método los métodos se invocan desde la referencia utilizando el operador .
+
+Si aún tiene dudas sobre las referencias, this y el uso de métodos, tenga la seguridad de que en las próximas clases (y cursos) revisaremos los conceptos y practicaremos mucho más.

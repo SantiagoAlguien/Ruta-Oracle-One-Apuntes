@@ -23,8 +23,9 @@ class Cuenta {
     }
 
     public boolean trasferencia(double valor, Cuenta cuenta){
-        if(valor >= saldo){
-            this.saldo =- valor;
+        if(this.saldo >= valor){
+            this.saldo = this.saldo - valor;
+            cuenta.depositar(valor);
             return true; 
         }else{
             return false;
