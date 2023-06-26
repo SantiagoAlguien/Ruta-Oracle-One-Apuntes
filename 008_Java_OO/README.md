@@ -121,7 +121,6 @@ void //Es una palabra reservada para decir que algo no retorne valor puede ejecu
 Usar la palabra reservada de this forma parte de buenas practicas lo que hace es decir que hace referencia a este objecto 
 
     class Cuenta {
-
     double saldo; 
     int agencia;
     int numero;
