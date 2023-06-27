@@ -172,8 +172,60 @@ Ahora escriba el método de transfiere, también debe retornar un booleano, pero
 Cómo definir métodos con parámetros y retorno cómo devolver algo usando la palabra clave return cómo usar la referencia thispara acceder a un atributo que podemos pasar una referencia como parámetro de método los métodos se invocan desde la referencia utilizando el operador .
 
 Si aún tiene dudas sobre las referencias, this y el uso de métodos, tenga la seguridad de que en las próximas clases (y cursos) revisaremos los conceptos y practicaremos mucho más.
+<br>
+<br>
 
 # Composicion de Objectos
 
 ## Referencia objetos
-    
+En esta parte del curso vamos a ver la opcion de que podamos insertar mas datos a nuestro objecto de Cuenta entoces para esto se va a crear la referencia a un objecto con suspropios datos.
+
+    class Cuenta {
+
+    double saldo; 
+    int agencia;
+    int numero;
+    Cliente titular; //Objecto referenciado
+    }
+
+Estamos separandon los datos del objecto cuenta en uno nuevo llamado cliente 
+
+![img](Referencia%20objectos.png)
+
+Este es el objecto cliente 
+
+    public class Cliente {
+    String nombre;
+    String documento;
+    String telefono;
+    }
+
+Luego de eso seguimos haciendo la referencia al objeto cliente en el de cuenta de la siguiente forma 
+
+    class Cuenta {
+
+    double saldo; 
+    int agencia;
+    int numero;
+    Cliente titular; //Objecto referenciado
+    }
+
+Por ultimo para hacer la refencia de cliente en cuenta para insertale datos lo hacemos de la siguiente forma en el link
+
+[TestReferencia2](/008_Java_OO/src/TestReferencia2.java)
+
+Para entender mejor como funcionan las referencias estas lo que haces es que cuando nombramos un objeto dentro de otro lo que se esta haciendo es hacer referencia al objecto como se ve en la imagen
+
+![img](comofuncionalareferencia.png)
+
+
+## Lo que se aprendio en el capitulo 04
+
+• Darse cuenta de la relación entre clases a través de la composición;
+
+• Ventajas de aislar información repetida en otra clase;
+
+• Detalles de la composición;
+
+• NullPointerException para atributos no inicializados y su cuidado.
+
