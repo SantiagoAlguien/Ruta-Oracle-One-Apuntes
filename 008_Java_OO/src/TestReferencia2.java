@@ -3,17 +3,17 @@ public class TestReferencia2 {
     public static void main(String[] args) {
         Cliente Diego = new Cliente();
 
-        Diego.titular = "Diego";
-        Diego.telefono = "342432432";
-        Diego.documento = "5435353";
+        Diego.setnombre("Diego");
+        Diego.setdocumento("342432432");
+        Diego.setprofecion("profesor");
 
 
         Cuenta cuentaDiego = new Cuenta();
-        cuentaDiego.agencia = 1;
-        cuentaDiego.titular = Diego;
+        cuentaDiego.setagencia(3213);;
+        cuentaDiego.setNumero(43242);;
 
-        System.out.println(cuentaDiego.titular.documento);
-        System.out.println(cuentaDiego.titular);
+        System.out.println(cuentaDiego.getagencia());
+        System.out.println(cuentaDiego.getnumero());
         System.out.println(Diego);
     }
 
