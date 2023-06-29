@@ -383,8 +383,38 @@ Son las propiedades de acceso o accessors. Son, en esencia, funciones que se eje
 
 Atributos privados, restringiendo el acceso a los atributos. Encapsulación de código Métodos de lectura de atributos, los getters Métodos para modificar atributos, los setters Getters y Setters de referencia
 
-# Constructores y mienbros estaticos
+# Constructores y mienbros estaticos 06
+
+## Constructores
+
+Los constructores dehinen los parametros de los objectos antes de que sean llamados para iniciar atributos y se crea dentro de la clase del objecto y se escribe asi 
+
+        public Cuenta(int agencia) { //Este metodo nos retorna el objecto cuenta lo que nos permite manipular el objceto antes de su nacimiento esto se le llama constructor//
+        //System.out.println("Aqui se crea una cuenta");
+        
+        if(agencia<= 0){
+            System.out.println("No se permite 0");
+            this.agencia = 1;
+        }else{
+            this.agencia = agencia;
+        }
+        total++;
+
+        System.out.println("Se va creando: " + total + " cuentas");
+        }
+
+Los constructores se utilizan para inicializar los atributos.
+
+## Variables estaticas
+
+Las variables estaticas nos ayudan para tener un valor unico cuando queramos tener datos estaticos lo que nos dice esta variable es que no va a ser de la instancia sino de la clase y se compone ais 
+
+    private static int total = 0;
 
 En este capítulo, nuestro aprendizaje se centró en los constructores. Están diseñados para que los objetos tengan sus atributos inicializados en la construcción misma. Esta estrategia evita estados inconsistentes en nuestro objeto.
 
-Los constructores se utilizan para inicializar los atributos.
+## Aprendimos en esta clase 06
+
+Los constructor de clases, que permite recibir argumentos e inicializar atributos desde la creación de un objeto. Con esto, la inicialización de los atributos recibidos en el constructor se vuelve obligatoria. Atributos de clase, atributos estáticos. Métodos de clase, métodos estáticos. Ausencia de referencia, del this, dentro de los métodos estáticos.
+
+## Fin del curso de Java OO: Entendiendo la Orientación a Objetos
