@@ -6,6 +6,26 @@ class Cuenta {
     private int numero;
     private Cliente titular;
 
+    private static int total = 0;
+
+    public Cuenta(){
+        
+    }
+
+    public Cuenta(int agencia) { //Este metodo nos retorna el objecto cuenta lo que nos permite manipular el objceto antes de su nacimiento esto se le llama constructor//
+        //System.out.println("Aqui se crea una cuenta");
+        
+        if(agencia<= 0){
+            System.out.println("No se permite 0");
+            this.agencia = 1;
+        }else{
+            this.agencia = agencia;
+        }
+        total++;
+
+        System.out.println("Se va creando: " + total + " cuentas");
+    }
+
     // No retorna valor
     public void depositar(double valor) {
         saldo = saldo + valor;
@@ -53,7 +73,13 @@ class Cuenta {
     }
 
     public void setagencia(int agencia) {
-        this.agencia = agencia;
+        
+        if(agencia > 0){
+            this.agencia = agencia;
+        }else{
+            System.out.println("No estan permitidos numeros en 0");
+        }
+        
     }
 
 }

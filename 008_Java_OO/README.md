@@ -382,3 +382,9 @@ Son las propiedades de acceso o accessors. Son, en esencia, funciones que se eje
 ### Aprendimos en esta clase 05:
 
 Atributos privados, restringiendo el acceso a los atributos. Encapsulación de código Métodos de lectura de atributos, los getters Métodos para modificar atributos, los setters Getters y Setters de referencia
+
+# Constructores y mienbros estaticos
+
+En este capítulo, nuestro aprendizaje se centró en los constructores. Están diseñados para que los objetos tengan sus atributos inicializados en la construcción misma. Esta estrategia evita estados inconsistentes en nuestro objeto.
+
+Los constructores se utilizan para inicializar los atributos.
