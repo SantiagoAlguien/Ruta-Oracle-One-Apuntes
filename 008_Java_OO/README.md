@@ -418,3 +418,8 @@ En este capítulo, nuestro aprendizaje se centró en los constructores. Están d
 Los constructor de clases, que permite recibir argumentos e inicializar atributos desde la creación de un objeto. Con esto, la inicialización de los atributos recibidos en el constructor se vuelve obligatoria. Atributos de clase, atributos estáticos. Métodos de clase, métodos estáticos. Ausencia de referencia, del this, dentro de los métodos estáticos.
 
 ## Fin del curso de Java OO: Entendiendo la Orientación a Objetos
+
+
+# POO: ¿Qué es la programación orientada a objetos?
+
+-[POO: ¿Qué es la programación orientada a objetos?](https://www.aluracursos.com/blog/poo-que-es-la-programacion-orientada-a-objetos)
