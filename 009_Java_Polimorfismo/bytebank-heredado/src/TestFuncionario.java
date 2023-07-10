@@ -4,9 +4,11 @@ public class TestFuncionario {
         Funcionario diego = new Funcionario();
         diego.setNombre("Diego ");
         diego.setDocumento("98098");
-        diego.setSalario("1000");
+        diego.setSalario(1000);
+        diego.setTipo(0);
 
-        System.out.println(diego.getNombre()+" "+diego.getDocumento()+" "+diego.getSalario());
-    }    
+        System.out.println(diego.getSalario());
+        System.out.println(diego.getBonificacion());
+    }
 
 }

@@ -2,9 +2,10 @@ public class Funcionario {
 
     private String nombre;
     private String documento;
-    private String salario;
+    private double salario;
+    private int tipo;
 
-    public Funcionario(){
+    public Funcionario() {
 
     }
 
@@ -24,12 +25,25 @@ public class Funcionario {
         this.documento = documento;
     }
 
-    public String getSalario() {
+    public double getSalario() {
         return salario;
     }
 
-    public void setSalario(String salario) {
+    public void setSalario(double salario) {
         this.salario = salario;
     }
 
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
+    }
+
+    public double getBonificacion() { // Esto identifica que tipo de funcionario es que recibe la bonificacion
+        // si tipo es = 1 es un gerente
+        // si tipo es = 0 es un funcionario
+        return this.salario * 0.05;
+    }
 }
