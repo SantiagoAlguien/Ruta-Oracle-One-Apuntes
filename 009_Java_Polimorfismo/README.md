@@ -113,7 +113,7 @@ Seguimos en la clase gerente y agregamos un nuevo atributo de clave con su sette
         return clave == "12345";
     }
 
-}
+    }
 
 Asi quedaria el codigo de test gerente [ejemplo](/009_Java_Polimorfismo/bytebank-heredado/src/TestGerente.java) validando el inicio de sesion 
 
@@ -169,3 +169,15 @@ La aplicacion del polimorfismo es que nos permite crear una unica puerta de entr
 EJEMPLO DE POLIMERFISMO
 
 [TestControlBonificaciones](/009_Java_Polimorfismo/bytebank-heredado/src/TestControlBonificaciones.java)
+
+lo que hacemos el copiar y pegar 2 clases de objecto cuenta y cliente que estos los vamos a implimenter en el bytebank-heredado luego de eso vamos a crear una nueva clase llamada "CuentaCorriente" de esta forma la escribimos
+
+    public class CuentaCorriente extends Cuenta{
+
+    public CuentaCorriente(int agencia, int numero) {
+        super(agencia,numero); //lo que hacemos el llamar el constructor de la clase padre que son agencia y numero
+        }
+    }
+
+lo que hacemos en el constructor de la clase es settiar los parametros del constructor padre.
+
