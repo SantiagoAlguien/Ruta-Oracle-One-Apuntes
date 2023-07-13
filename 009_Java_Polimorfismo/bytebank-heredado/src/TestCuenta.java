@@ -1,5 +1,7 @@
 public class TestCuenta {
 
+    // Nueva regla de negocio ahora por cada trasferencia se cobrara un porcentaje
+
     public static void main(String[] args) {
         CuentaCorriente c1 = new CuentaCorriente(1, 1);
         CuentaAhorros c2 = new CuentaAhorros(2, 3);

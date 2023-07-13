@@ -181,3 +181,18 @@ lo que hacemos el copiar y pegar 2 clases de objecto cuenta y cliente que estos 
 
 lo que hacemos en el constructor de la clase es settiar los parametros del constructor padre.
 
+## Sobre escritura de metodos 
+
+lo que se hace la sobre llamar matodos de la clase pabre que solo afecta esta clase y deje el metodo pabre sin modificaciones es un metodo sobre escrito y no es metodo nuevo y es asi llamando al metodo retirar
+
+    @Override
+    public boolean retirar(double valor) {
+        double comision = 0.2; //combrar comision mas el valor trasferido
+        return super.retirar(valor+ comision);
+    }
+
+la firma del metodo debe ser igual al pabre para que compile
+
+**En la última clase vimos sobre la anotación @Override. ¿Cuál es su propósito?**
+
+Se utiliza para sobrescribir el método de la clase madre, lo que indica que se ha modificado el método original.
