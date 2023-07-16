@@ -1,7 +1,7 @@
 //entidad cuenta:
-class Cuenta {
+public abstract class Cuenta {
 
-    public double saldo;
+    protected double saldo;
     private int agencia;
     private int numero;
     private Cliente titular;
@@ -11,18 +11,22 @@ class Cuenta {
     // *public Cuenta(){} //rompe las reglas de negocio porque para crear una cuenta
     // nesecita una agencia y un numero
 
+    public Cuenta(){ //las clases asbtractas pueden ser tener un constructor
+
+    }
+
+
     public Cuenta(int agencia, int numero) { // Este metodo nos retorna el objecto cuenta lo que nos permite manipular
                                              // el objceto antes de su nacimiento esto se le llama constructor//
         this.agencia = agencia;
         this.numero = numero;
+        System.out.println("Estoy creando una cuenta");
 
-        Cuenta.total++;
+        Cuenta.total ++;
     }
 
     // No retorna valor
-    public void depositar(double valor) {
-        saldo = saldo + valor;
-    }
+    public abstract void depositar(double valor);
 
     // Retornar valor
     public boolean retirar(double valor) {

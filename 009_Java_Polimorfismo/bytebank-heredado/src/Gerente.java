@@ -1,24 +1,22 @@
-
 //                  Extiende de 
-public class Gerente extends Funcionario {
+public class Gerente extends Funcionario implements Autenticable {
 
-    private int contraseña;
+    //Sobre escritura de metodo
+    private String contraseña;
 
-    public void setContraseña(int contraseña) {
+    @Override
+    public double getBonificacion() {
+        return this.getSalario();
+    }
+
+    @Override
+    public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
     }
 
-    public boolean autenticar(int contraseña) {
-        if (this.contraseña == contraseña) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    public double getBonificacion() {
-        System.out.println("EJECUTANDO DESDE GERENTE");
-        return super.getSalario() + super.getBonificacion();
+    @Override
+    public boolean inicalizarSeccion(String contraseña) {
+        return this.contraseña == contraseña;
     }
 
 }

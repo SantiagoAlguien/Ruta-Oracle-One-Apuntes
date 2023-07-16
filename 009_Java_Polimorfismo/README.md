@@ -196,3 +196,66 @@ la firma del metodo debe ser igual al pabre para que compile
 **En la última clase vimos sobre la anotación @Override. ¿Cuál es su propósito?**
 
 Se utiliza para sobrescribir el método de la clase madre, lo que indica que se ha modificado el método original.
+
+## Clase abstracta
+
+La abstracion de clases es llevar esto de la abstracta del mundo real a la programacion para definir una clase abstracta se puede tomar la clase por defecto de funcionario y lo veremos como abstracta de esta forma
+
+    public abstract class Funcionario 
+
+No se pueden ser instanciadas. Para crear una instancia, primero debemos crear una clase hija no abstracta,  Una clase abstracta representa un concepto, algo abstracto, y el compilador no permite instanciar un objeto de esa clase. Para crear una instancia, es necesario crear primero una clase hija no abstracta.
+
+## Metodo abstracto
+
+un método abstracto es un tipo especial de método que no tiene una implementación definida en la clase en la que se declara, sino que se deja para que las clases derivadas o subclases lo implementen. Un método abstracto se declara utilizando la palabra clave abstract.
+
+Los métodos abstractos son útiles cuando se desea definir un comportamiento general en una clase base, pero se deja la implementación específica a las subclases. Esto permite la creación de una jerarquía de clases que pueden proporcionar diferentes implementaciones de los métodos abstractos según sus necesidades.
+
+    public abstract void depositar(double valor);
+
+![img](Interfases%20y%20clasesAsabstracta.png)
+
+[Interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
+
+[Clases abstracta](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
+
+## Estructura de bytebank 
+
+La estructura de bytebank a cambiando porque ahora algunos funcionarios de la empresa deben pasar primero por un metodo de [FuncionarioAutenticable](/009_Java_Polimorfismo/bytebank-heredado/src/Autenticable.java) para validar su ingreso de esta forma esta estructurado 
+
+![img](Metodologia%20del%20banco.png)
+
+
+## Interfaces
+
+Las interfaces conptualmente se puede definir una clase pero de tipo asbtracta se parece mucho solo inteface no puede tener metodos implementados la palabre reservada es interface y param llamar una interfaces se pone la palabra reservada implemes en la clase que queramos implementar la interfas, la interfas solo tienen la firman del metodo
+
+**interface Ejemplo**
+
+    public interface Autenticable { //interfas que no puede contener metodos solo el cuerpo
+
+    public abstract void setContraseña(String contraseña);
+
+    public abstract boolean inicalizarSeccion(String contraseña);
+
+    }
+
+Asi queda el sistema del bancon con las interfas, esto como se observa el en diagrama esto puede ser esclable
+
+![img](interfas.png)
+
+Toca indertificar los grupos en donde se ubican los objectos con su respectiva relacion Con composiciones e interfaces tendremos más flexibilidad con nuestro código, ya que no estaremos apegados al acoplamiento que propone la herencia.
+
+## Composición objetos
+La composicion final del banco bytebank identificando las distintas clases con sus nombres con sus resoectivas abstractaciones 
+
+![img](Composición%20objetos.png)
+
+## Lo que aprendimos en el curso 
+
+En el  curso de Java sobre polimorfismo abordó conceptos como herencia, interfaces, composición de objetos y el uso de superclases y subclases. También se explicaron conceptos relacionados con la sobreescritura de métodos, modificadores de acceso y la utilización de clases abstractas.
+
+En este curso empezamos por una clase principal la de funcionario la cual fue escanlando en las distintas funciones que puede tener este.
+
+# Fin del curso de Java Polimorfismo: Entendiendo herencia e interfaces
+

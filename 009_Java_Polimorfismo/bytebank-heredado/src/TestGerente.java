@@ -11,10 +11,10 @@ public class TestGerente {
         System.out.println(g1.getDocumento());
         System.out.println(g1.getSalario());
 
-        g1.setContraseña(2222);
-        boolean autenticou = g1.autenticar(2222);
+        g1.setContraseña("2222");
+        
 
-        System.out.println(autenticou);
+        
 
         System.out.println(g1.getBonificacion());
     }

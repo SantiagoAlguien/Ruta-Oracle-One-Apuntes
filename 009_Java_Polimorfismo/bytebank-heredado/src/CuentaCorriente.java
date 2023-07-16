@@ -13,4 +13,9 @@ public class CuentaCorriente extends Cuenta {
         return super.retirar(ValorRetirar);
     }
 
+    @Override
+    public void depositar(double valor) {
+        // TODO Auto-generated method stub
+    }
+
 }

@@ -1,4 +1,4 @@
-public class Funcionario {
+public abstract class Funcionario { //funcionario es el usuario por defecto de los empleados de la empresa, esto puede ser tomado como un concpeto abstracto
 
     private String nombre;
     private String documento;
@@ -41,9 +41,9 @@ public class Funcionario {
         this.tipo = tipo;
     }
 
-    public double getBonificacion() { // Esto identifica que tipo de funcionario es que recibe la bonificacion
+    public abstract double getBonificacion();  //{ // Esto identifica que tipo de funcionario es que recibe la bonificacion
         // si tipo es = 1 es un gerente
         // si tipo es = 0 es un funcionario
-        return this.salario * 0.05;
-    }
+      //  return this.salario * 0.05;
+    //}
 }
