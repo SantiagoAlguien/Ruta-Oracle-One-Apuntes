@@ -83,3 +83,50 @@ Lo que hace el try es capturar el error y dejar que codigo compile normal
 ![img](capturaerror.png)
 
 Toda excepción en Java tiene un nombre que la idenfica. Este enfoque hace que sea más fácil de entender que usar números mágicos (códigos de error) como 15, 7012 o 16.
+
+
+## Uso del throw
+
+En Java, throw es una palabra clave que se utiliza para lanzar una excepción explícitamente en un bloque de código. Cuando se ejecuta la instrucción throw, se produce una interrupción en el flujo normal del programa y se pasa el control al bloque de código que maneja esa excepción (ya sea en el mismo método o en un método superior en la pila de llamadas).
+
+La sintaxis básica de throw es la siguiente:
+
+  throw excepcion;
+
+## Estrucutura de las excepciones 
+
+Las excepciones se van extendiendo entre distintos niveles de gerarquia como si fueran clases o bueno son objecto 
+
+diagrama de niveles 
+
+![img](Jerarquia.png)
+
+como ejemplo creamos una excepcion propia que extiende de una objecto de expecion 
+
+[Ejemplo](./Java-pila-ejecucion/src/MiException.java)
+
+En Java en el JVM Existen 2 tipos de errores las excepciones y los errores de sistasis o estructura de codigo
+
+## throws
+
+Se usa para lanzar expeciones en metodos que estas 100 por 100 que va a salir una expecion a diferencia de try catch que dice que puede salir 
+
+  private static void metodo1() throws MiException {
+    System.out.println("Inicio de metodo1");
+      metodo2();
+    System.out.println("Fin de metodo1");
+  }
+
+## Entendiendo las excepciones 
+
+1) Existe una gran jerarquía de clases que representan excepciones. Por ejemplo, ArithmeticException es hija de RuntimeException, que hereda de Exception, que a su vez es hija de la clase de excepciones más ancestral, Throwable. Conocer bien esta jerarquía significa saber cómo usar las excepciones en su aplicación.
+
+2) Throwable es la clase que necesita ser extendida para poder lanzar un objeto en la pila (usando la palabra reservada throw)
+
+3) StackOverflowError es un error de la máquina virtual para informar que la pila de ejecución no tiene más memoria.
+
+4) Las excepciones se dividen en dos grandes categorías: las que el compilador comprueba obligatoriamente y las que no. Los primeros se denominan checked y se crean al pertenecer a una jerarquía que no pasa por RuntimeException. Los segundos son unchecked y se crean como descendientes de RuntimeException.
+
+*** Tip ***
+
+La herencia y polimorfismo se pueden aplicar a las excepciones como si estuviaremos llamando a un objecto pabre para aplicar una excepcion en especifico.
