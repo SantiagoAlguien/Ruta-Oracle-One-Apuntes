@@ -130,3 +130,5 @@ Se usa para lanzar expeciones en metodos que estas 100 por 100 que va a salir un
 *** Tip ***
 
 La herencia y polimorfismo se pueden aplicar a las excepciones como si estuviaremos llamando a un objecto pabre para aplicar una excepcion en especifico.
+
+# Fin de 010_Java_Excepciones
